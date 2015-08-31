@@ -21,7 +21,7 @@ public class BungeeCommand extends Command {
 					player.sendMessage(new TextComponent(message.replace("{PLAYER}", player.getName()).replace("{SERVER}", player.getServer().getInfo().getName())));
 			} else {
 				sender.sendMessage(new TextComponent(ChatColor.RED + "" + ChatColor.BOLD + "Please add a message to alert on the sever!"));
-				sender.sendMessage(new TextComponent(ChatColor.RED + "" + ChatColor.BOLD + "Example: " + ChatColor.GRAY + ChatColor.ITALIC + "/alert &c&lWelcome &cto the &o{SERVER} &cserver, &o{PLAYER}&c!"));
+				sender.sendMessage(new TextComponent(ChatColor.RED + "" + ChatColor.BOLD + "Example: " + ChatColor.GRAY + ChatColor.ITALIC + "/balert &c&lWelcome &cto the &o{SERVER} &cserver, &o{PLAYER}&c!"));
 			}
 		} else {
 			sender.sendMessage(new TextComponent(ChatColor.RED + "You do not have permission to execute this command!"));
