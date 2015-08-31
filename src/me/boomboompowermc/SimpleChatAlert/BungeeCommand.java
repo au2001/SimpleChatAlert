@@ -19,9 +19,9 @@ public class BungeeCommand extends Command {
 			if (args.length > 0) {
 				String message = ChatColor.translateAlternateColorCodes('&', "&4&lALERT: &c&l" + StringUtils.join(args, " "));
 				for (ProxiedPlayer player : BungeeAlert.instance.getProxy().getPlayers())
-					player.sendMessage(new TextComponent(message.replace("{PLAYER}", player.getName())));
+					player.sendMessage(new TextComponent(message.replace("{PLAYER}", player.getName()).replace("{SERVER}", player.getServer().getInfo().getName())));
 			} else {
-				sender.sendMessage(new TextComponent(ChatColor.DARK_RED + "Add a message! Example: " + ChatColor.ITALIC + "/alert Welcome to the server, {PLAYER}!"));
+				sender.sendMessage(new TextComponent(ChatColor.DARK_RED + "Add a message! Example: " + ChatColor.ITALIC + "/alert Welcome to the {SERVER} server, {PLAYER}!"));
 			}
 		} else {
 			sender.sendMessage(new TextComponent(ChatColor.DARK_RED + "You do not have access to this command!"));
