@@ -2,6 +2,7 @@ package me.boomboompowermc.SimpleChatAlert;
 
 import java.io.IOException;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -48,7 +49,7 @@ public class Alert extends JavaPlugin {
 	}
 
 	public void log(String message) {
-		getLogger().info(ChatColor.translateAlternateColorCodes('&', message));
+		Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', message));
 	}
 
 }

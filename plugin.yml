@@ -1,5 +1,5 @@
 name: SimpleChatAlert
-main: me.boomboompowermc.Alert
+main: me.boomboompowermc.SimpleChatAlert.Alert
 description: A very simple lightweight alert plugin!
 version: 4.3
 author: boomboompower

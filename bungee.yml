@@ -1,5 +1,5 @@
 name: SimpleChatAlert
-main: me.boomboompowermc.BungeeAlert
+main: me.boomboompowermc.SimpleChatAlert.BungeeAlert
 description: A very simple lightweight alert plugin!
 version: 4.3
 author: boomboompower

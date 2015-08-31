@@ -16,7 +16,8 @@ public class AlertCommand implements CommandExecutor {
 			for (Player player : Bukkit.getOnlinePlayers())
 				player.sendMessage(message.replace("{PLAYER}", player.getName()));
 		} else {
-			sender.sendMessage(ChatColor.DARK_RED + "Add a message! Example: " + ChatColor.ITALIC + "/alert Welcome to the server, {PLAYER}!");
+			sender.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "Please add a message to alert on the sever!");
+			sender.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "Example: " + ChatColor.GRAY + ChatColor.ITALIC + "/alert &c&lWelcome &cto the server, &o{PLAYER}&c!");
 		}
 		return true;
 	}

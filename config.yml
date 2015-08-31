@@ -1,2 +1,4 @@
-# Welcome and thanks for using SimpleChatAlert, This is the default config file so feel free to edit any of the values to your advantage. #
+# Welcome and thanks for using SimpleChatAlert.
+# This is the default config file, feel free to edit any of the values to your advantage.
+
 AutoUpdater: false
