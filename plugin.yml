@@ -1,13 +1,14 @@
 name: SimpleChatAlert
-version: 4.2
 main: me.boomboompowermc.Alert
-author: boomboompower
 description: A very simple lightweight alert plugin!
+version: 4.3
+author: boomboompower
 prefix: SCA
 load: STARTUP
 website: dev.bukkit.org/bukkit-plugins/simple-chat-alert
 commands:
-   Alert:
-      description: Sends an alert (Needs sca.alert)
-      usage: /<command> [Message]
-      default: op
+  alert:
+    description: Sends an alert on the server.
+    usage: /<command> <message>
+    permission: sca.alert
+    aliases: [sca, scalert, simplechatalert]

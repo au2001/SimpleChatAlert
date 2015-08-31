@@ -1,0 +1,8 @@
+name: SimpleChatAlert
+main: me.boomboompowermc.BungeeAlert
+description: A very simple lightweight alert plugin!
+version: 4.3
+author: boomboompower
+prefix: SCA
+load: STARTUP
+website: dev.bukkit.org/bukkit-plugins/simple-chat-alert
