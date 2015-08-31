@@ -17,9 +17,9 @@ public class BungeeCommand extends Command {
 	public void execute(CommandSender sender, String[] args) {
 		if (sender.hasPermission("sca.alert")) {
 			if (args.length > 0) {
-				String message = ChatColor.RED + "" + ChatColor.BOLD + StringUtils.join(args, " ");
+				String message = ChatColor.translateAlternateColorCodes('&', "&4&lALERT: &c&l" + StringUtils.join(args, " "));
 				for (ProxiedPlayer player : BungeeAlert.instance.getProxy().getPlayers())
-					player.sendMessage(new TextComponent(ChatColor.DARK_RED + "" + ChatColor.BOLD + "ALERT: " + message.replace("{PLAYER}", player.getName())));
+					player.sendMessage(new TextComponent(message.replace("{PLAYER}", player.getName())));
 			} else {
 				sender.sendMessage(new TextComponent(ChatColor.DARK_RED + "Add a message! Example: " + ChatColor.ITALIC + "/alert Welcome to the server, {PLAYER}!"));
 			}
