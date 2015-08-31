@@ -1,5 +1,7 @@
 package me.boomboompowermc.SimpleChatAlert;
 
+import java.io.IOException;
+
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -28,6 +30,14 @@ public class Alert extends JavaPlugin {
 				log("You can get it from: " + updateChecker.getLink());
 			}
 		}
+		
+		try {
+	        MetricsLite metrics = new MetricsLite(this);
+	        metrics.start();
+	    } catch (IOException e) {
+	    	log("&c&lFailed to submit statistics to mcstats.org:");
+	        e.printStackTrace();
+	    }
 	}
 
 	public void onDisable() {
